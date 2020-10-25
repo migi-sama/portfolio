@@ -2,8 +2,8 @@ html {
 	background-color: #d6d3d3;
 }
 
-body {
-
+body .container{
+    min-height: 85vh;
 }
 
 .sociales ul {

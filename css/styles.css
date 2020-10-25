@@ -6,6 +6,10 @@ body {
 
 }
 
+body .container{
+    min-height: 85vh;
+}
+
 .sociales ul {
     list-style: none;
     margin:0;

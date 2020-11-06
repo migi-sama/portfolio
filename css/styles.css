@@ -1,5 +1,5 @@
 html {
-	background-image: url(../fondo.jpg);
+	background-image: url(../img/fondo.jpg);
 }
 
 body {
@@ -13,7 +13,7 @@ body .container{
 }
 
 .bg-perfil{
-  background-image:url(../pic.jpg);
+  background-image:url(../img/pic.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -31,7 +31,7 @@ body .container{
     display: inline-block;
 }
 
-.sociales ul li a::before {
+.sociales ul li a{
     font-family: 'FontAwesome';
     display: inline-block;
     vertical-align: center;
@@ -40,16 +40,6 @@ body .container{
     -webkit-font-smoothing: antialiased;
     font-size: 2rem;
     color: #fff;
-}
-
-.sociales ul li a[href*="facebook.com"]::before{
-    content: '\f230';
-}
-.sociales ul li a[href*="twitter.com"]::before{
-    content: '\f081';
-}
-.sociales ul li a[href*="instagram.com"]::before{
-    content: '\f16d';
 }
 
 .footer {
@@ -138,7 +128,8 @@ features
 
 .feature-item .left-icon img {
   float: left;
-  margin-right: 30px;
+  margin-right: 10px;
+  height: 90px;
 }
 
 .feature-item .right-content {
@@ -170,4 +161,5 @@ ul, li{
 
 em {
     color: #232d39;
+    text-decoration: line-through;
 }

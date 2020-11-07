@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
 	<title>Miguel Gizzi | Web Portfolio</title>
 </head>
 <body class="mx-sm-5">
@@ -152,30 +153,73 @@
 							<div class="owl-carousel owl-theme owl-loaded">
 								<div class="owl-stage-outer">
 									<div class="owl-stage">
-										<div class="owl-item">
-											
-											<div class="card" style="width: 221.5px; margin-right: 10px;">
-												<img class="card-img-top" src="img/kodoti.jpg" alt="Card image cap">
-												<div class="card-body">
-													<h6 class="card-title" style="color: black">INTRODUCCIÓN A GIT</h6>
-													<p class="card-text" style="color: black">ID de la credencial: 25612e6a-e4a5-48e2-b280-cf1f185e4e7f</p>
-													<p class="card-text" style="color: black"><small>Expedición: feb. de 2020 - Sin fecha de vencimiento</small></p>
-													<div class="col text-center">
-														<a href="https://kodoti.com/perfil/miguel-gizzi-4041/certificados/25612e6a-e4a5-48e2-b280-cf1f185e4e7f" target="blank" class="btn btn-primary">Ver</a>
+										<div class="owl-item center" style="width: 149.5px; margin-right: 10px;">
+											<div class="card-curso mx-2">
+												<div class="card">
+													<img class="card-img-top" src="img/kodoti.jpg" alt="Card image cap">
+													<div class="card-body">
+														<h6 class="card-title" style="color: black">INTRODUCCIÓN A GIT</h6>
+														<p class="card-text" style="color: black">ID de la credencial: 25612e6a-e4a5-48e2-b280-cf1f185e4e7f</p>
+														<p class="card-text" style="color: black"><small>Expedición: feb. de 2020 - Sin fecha de vencimiento</small></p>
+														<div class="col text-center">
+															<a href="https://kodoti.com/perfil/miguel-gizzi-4041/certificados/25612e6a-e4a5-48e2-b280-cf1f185e4e7f" target="blank" class="btn btn-primary">Ver</a>
+														</div>
 													</div>
 												</div>
 											</div>
-											
 										</div>
-										<div class="owl-item">
-											<div class="card" style="width: 221.5px; margin-right: 10px;">
-												<img class="card-img-top" src="img/comingsoon.jpg" alt="Card image cap">
-												<div class="card-body">
-													<h6 class="card-title" style="color: black">PRONTO</h6>
+										<div class="owl-item center" style="width: 149.5px; margin-right: 10px;">
+											<div class="card-curso mx-2">
+												<div class="card">
+													<img class="card-img-top" src="img/comingsoon.jpg" alt="Card image cap">
+													<div class="card-body">
+														<h6 class="card-title" style="color: black">PRONTO</h6>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="contact-form">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 mb-2">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15709.07860023932!2d-68.9035464175077!3d10.158723055247185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80b34a5b2f2585%3A0x9898a3082635499!2sChivacoa%203202%2C%20Yaracuy!5e0!3m2!1ses!2sve!4v1604686089573!5m2!1ses!2sve" width="400" height="400" frameborder="0" style="border:0; border-radius:5px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+								</div>
+								<div class="col-lg-6 col-md-12 mb-2" style="color: black;">
+									<form id="contact-form" action="" onclick = "event.preventDefault();">
+								        <div class="row">
+								        	<div class="col-md-6 col-sm-12">
+									        	<fieldset>
+									        		<input type="text" name="name" placeholder="Fulanito *" required v-model="from_name">
+									        	</fieldset>
+									        </div>
+									        <div class="col-md-6 col-sm-12">
+									        	<fieldset>
+									        		<input type="email" name="email" placeholder="ejemplo@ejemplo.com *" required v-model="reply_to">
+									        	</fieldset>
+									        </div>
+									        <div class="col-lg-12">
+									        	<fieldset>
+									        		<textarea name="message" placeholder="¿Qué deseas comunicarme? *" required v-model="message"></textarea>
+									        	</fieldset>
+									        </div>
+											<div class="col-lg-12">
+									        	<fieldset>
+													<button type="submit" id="form-submit" class="main-button btn-block" @click="enviar">Enviar</button>
+												</fieldset>
+									        </div>
+									    </div>
+								    </form>
 								</div>
 							</div>
 						</div>
@@ -190,7 +234,9 @@
 		<span class="text-muted">© 2020. Desarrollado por Miguel Gizzi</span>
 	</footer>
 	
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
+    <script src="js/sendmail.js"></script>
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="owlcarousel/owl.carousel.min.js"></script>

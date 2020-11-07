@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #1a122a;
+    background-color: #000000b5;
     color: #fff;
     
 }
@@ -159,10 +159,6 @@ ul, li{
     list-style: none;
 }
 
-em {
-    color: #232d39;
-    text-decoration: line-through;
-}
 
 .contact-form{
     padding: 50px;
@@ -174,13 +170,7 @@ em {
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
 }
 
-.card-curso {
-   position: relative;
-   transition: all .5s ease-in;
-   background: #fff;
-   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-   border-radius: 15px;
-}
+
 
 .contact-form input, .contact-form textarea{
     color: #7a7a7a;
@@ -217,4 +207,21 @@ em {
     outline: none;
     margin-top: -8px;
     border-radius: 5px;
+}
+
+.card{
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  border: none;
+  width: 100%;
+  height: auto;
+}
+.card img{
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.card-title, .card-text{
+  font-size: 90%;
 }
